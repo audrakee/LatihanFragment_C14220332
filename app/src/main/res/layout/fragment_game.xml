@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFF8DC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score Board"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#6A5ACD" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvScoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="50"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#4682B4"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try to Guess!"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:textSize="28sp"
+        android:textColor="#4682B4"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="3"
+            android:layout_margin="8dp"
+            android:backgroundTint="#20B2AA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#20B2AA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="4"
+            android:layout_margin="8dp"
+            android:backgroundTint="#20B2AA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="5"
+            android:layout_margin="8dp"
+            android:backgroundTint="#20B2AA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="3"
+            android:layout_margin="8dp"
+            android:backgroundTint="#20B2AA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#20B2AA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="4"
+            android:layout_margin="8dp"
+            android:backgroundTint="#20B2AA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="5"
+            android:layout_margin="8dp"
+            android:backgroundTint="#20B2AA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:text="2"
+            android:layout_margin="8dp"
+            android:backgroundTint="#20B2AA"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnGiveUp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Exit Game"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8B0000"
+        android:textSize="18sp"/>
+</LinearLayout>

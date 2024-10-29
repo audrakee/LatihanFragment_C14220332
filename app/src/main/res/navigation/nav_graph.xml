@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="uts.c14220332.c14220332_latihanfragment3.GameFragment"
+        tools:layout="@layout/fragment_game" />
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="uts.c14220332.c14220332_latihanfragment3.ResultFragment"
+        tools:layout="@layout/fragment_result">
+        <argument
+            android:name="finalScore"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="uts.c14220332.c14220332_latihanfragment3.SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+
+    <action
+        android:id="@+id/action_resultFragment_to_gameFragment"
+        app:destination="@id/gameFragment" />
+
+</navigation>
+
